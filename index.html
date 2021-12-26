@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="timedate">
+        <div class="timedate__time">
+          <h1 id="clock">00:00</h1>
+          <div class="timedate__time__ampm-sec">
+            <h2 id="ampm">00</h2>
+            <h2 id="sec">00</h2>
+          </div>
+        </div>
+        <div class="timedate__date">
+          <h3 id="date">0000년 00월 00일 0요일</h3>
+        </div>
+      </div>
+      <div class="weather-region">
+        <span id="weather"></span>
+        <span id="temp"></span>
+        <span id="region"></span>
+      </div>
+      <div class="login-greeting">
+        <form id="login-form" class="login__form hidden">
+          <input
+            required
+            id="login-input"
+            class="login__input"
+            type="text"
+            placeholder="Write your name."
+          />
+          <button id="login-btn" class="login__btn">Login</button>
+        </form>
+        <div class="greeting">
+          <h1 id="greeting" class="login__greeting"></h1>
+          <button id="logout-btn" class="logout__btn hidden">Logout</button>
+        </div>
+      </div>
+
+      <div class="todo hidden">
+        <form id="todo-form" class="todo__form">
+          <h1 class="todo__form__title">To-Do List</h1>
+          <input
+            id="todo-input"
+            class="todo__input"
+            type="text"
+            placeholder="Write your To-Do list."
+          />
+        </form>
+        <form id="todos">
+          <ul id="todo-list"></ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/clock-date.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bgimg.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
